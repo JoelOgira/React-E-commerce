@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Home from './Components/E-commerce/Home';
 
-function App() {
+const App = () => {
 
   return (
-    <div className="App">
-      
+    <div className="App min-h-[100dvh] bg-slate-600 text-white">
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </div>
   )
 }
